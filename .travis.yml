@@ -15,7 +15,6 @@ after_success:
   - docker build -t allotsys/multi-worker ./worker
   # Log into the docker CLI
   - ECHO "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  DOCKER_ID
   # Take those images and push them to docker hub
   - docker push allotsys/multi-client
   - docker push allotsys/multi-nginx
