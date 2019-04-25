@@ -12,7 +12,7 @@ spec:
     - hosts:
         - allotsys.com
         - www.allotsys.com
-      secretName: k8s-multi-com
+      secretName: allotsys-com
   rules:
     - host: allotsys.com
       http:
